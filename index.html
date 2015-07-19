@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Matrix Elimination</title>
+	
+	<style>
+		body, canvas{
+			background-color:#000;
+		}
+
+		canvas{
+			image-rendering: crisp-edges;
+			image-rendering: -moz-crisp-edges;
+			image-rendering: -webkit-optimize-contrast;
+			-ms-interpolation-mode: nearest-neighbor;
+		}
+	</style>
+
+	<!-- SCRIPTS -->
+	<script src="logic/lib/easeljs-0.8.0.min.js"></script>
+	<script src="logic/lib/preloadjs-0.6.0.min.js"></script>
+	<script src="logic/lib/soundjs-0.6.0.min.js"></script>
+	<script src="logic/lib/custome_libs.js"></script>
+
+	<!-- CONTROLLER -->
+	<script src="logic/controller/controller.js"></script>
+	<script src="logic/controller/ObjectPool.js"></script>
+	<script src="logic/controller/reflblockpool.js"></script>
+	<script src="logic/controller/matrix.js"></script>
+	<script src="logic/controller/visualeffects.js"></script>
+	<script src="logic/controller/savemanager.js"></script>
+	<script src="logic/controller/preloader.js"></script>
+	<script src="logic/controller/soundplayer.js"></script>
+
+	<!-- MODEL -->
+	<script src="logic/model/block.js"></script>
+	<script src="logic/model/blockgroup.js"></script>
+	<script src="logic/model/disappearingblock.js"></script>
+	<script src="logic/model/groupdb.js"></script>
+	<script src="logic/model/blockbutton.js"></script>
+	<script src="logic/model/rotatingline.js"></script>
+	<script src="logic/model/lrgroup.js"></script>
+	<script src="logic/model/matrixtile.js"></script>
+	<script src="logic/model/gamestarttimer.js"></script>
+	<script src="logic/model/blockreflection.js"></script>
+	<script src="logic/model/TypedText.js"></script>
+	<script src="logic/model/screenflash.js"></script>
+	<script src="logic/model/textpanel.js"></script>
+	<script src="logic/model/lifepanel.js"></script>
+	<script src="logic/model/choicepanel.js"></script>
+	<script src="logic/model/messagebox.js"></script>
+	<script src="logic/model/preloadicon.js"></script>
+	<script src="logic/model/frame.js"></script>
+	<script src="logic/model/nextblockpanel.js"></script>
+	<script src="logic/model/checkbox.js"></script>
+	<script src="logic/model/musicicon.js"></script>
+	<script src="logic/model/soundicon.js"></script>
+</head>
+<body onload="matrixelim.init()">
+	<canvas width="770px" height="770px" moz-opaque></canvas>
+</body>
+</html>
